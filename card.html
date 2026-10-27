@@ -51,20 +51,20 @@
     <div class="id_image_data">
       <div class="id_card_container" style="position: relative; width: 100%; max-width: 420px; aspect-ratio: 1.58 / 1; overflow: hidden; margin: 0 auto;">
     
-    <!-- Tło (naprawione na sztywno, żeby wypełniało całość i nie było za krótkie) -->
+    <!-- 1. Tło identyfikatora (najniższa warstwa, żeby było pod spodem) -->
     <div class="id_own_image" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('https://i.imgur.com/CHXifXD.jpg'); background-size: cover; background-position: center; z-index: 1;"></div>
     
     <div class="inset" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;"></div>
 
-    <!-- Zdjęcie profilowe (odpowiednia wielkość, żeby nie było za małe) -->
+    <!-- 2. Zdjęcie profilowe (teraz na wierzchu, odpowiednio duże i zaokrąglone) -->
     <img draggable="false" class="id_image" src="https://i.imgur.com/CHXifXD.jpg" style="position: absolute; top: 6%; left: 5%; width: 36%; height: 60%; object-fit: cover; border-radius: 14px; z-index: 3;">
 
-    <!-- Flaga i orzeł -->
+    <!-- 3. Flaga i orzeł -->
     <img draggable="false" src="https://i.imgur.com/I7oPp72.gif" class="flag_video" style="position: absolute; top: 68%; left: 5%; z-index: 3;">
     <img draggable="false" src="https://i.imgur.com/EbBJWYb.gif" class="eagle_video" style="position: absolute; top: 78%; left: 5%; z-index: 3;">
     <p class="eagle_text" style="position: absolute; z-index: 3;">Rzeczpospolita<br>Polska</p>
 
-    <!-- Siatka z danymi -->
+    <!-- 4. Siatka z danymi (blisko siebie) -->
     <div class="id_data_grid" style="position: absolute; top: 5%; right: 5%; width: 52%; z-index: 3; display: flex; flex-direction: column; gap: 6px;">
         <div class="data_holder" style="margin: 0;">
             <p class="data_title firstname" id="name" style="margin: 0; font-weight: bold;"></p>
