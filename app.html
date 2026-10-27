@@ -868,10 +868,10 @@
 
                 const data = await response.json();
 
-                if (data.url) {
+                if (data.secure_url) {
                     statusMessage.style.color = 'var(--success-green)';
                     statusMessage.textContent = 'Zdjęcie załadowane pomyślnie! ✅';
-                    return data.url;
+                    return data.secure_url;
                 } else {
                     statusMessage.style.color = 'var(--error-red)';
                     statusMessage.textContent = 'Błąd Cloudinary: ' + (data.error && data.error.message ? data.error.message : 'Nieznany błąd.');
