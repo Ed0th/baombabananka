@@ -51,13 +51,21 @@
     <div class="id_image_data">
         <div class="id_card_container">
    <div class="id_card_container">
-    <div class="id_own_image"></div>
+    <div class="id_card_container">
+    <!-- 1. Tło karciane (na samym dole) -->
+    <div class="id_own_image" style="background-image: url('https://i.imgur.com/CHXifXD.jpg');"></div>
 
-    <img draggable="false" class="id_image" src="https://i.imgur.com/CHXifXD.jpg" alt="">
-    
+    <!-- 2. Narzutka / nakładka (jeśli używasz) -->
     <div class="inset"></div>
 
-    <div class="id_content">
+    <!-- 3. Treść karty (zdjęcie profilowe + dane) -->
+    <div class="id_card_content">
+        <img draggable="false" class="id_image" src="https://i.imgur.com/CHXifXD.jpg" alt="">
+        
+        <!-- Miejsce na Twoje dane (imię, nazwisko, PESEL itp.) -->
+        <div class="id_text_data">
+            <!-- Tutaj są Twoje elementy z tekstami -->
+        </div>
     </div>
 </div>
         <img draggable="false" src="https://i.imgur.com/I7oPp72.gif" class="flag_video">
